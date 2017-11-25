@@ -8,20 +8,29 @@
   <groupId>clinic.programmming</groupId>
   <!-- name of JAR file that we are creating as an example -->
   <artifactId>maven-quick-start</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
 
-  <!-- COMPILE in DEPENDENCIES --> 
+  <!-- DEPENDENCIES: Libraries: Application Code --> 
   <dependencies> 
       <dependency>
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-lang3</artifactId>
           <version>3.7</version>
       </dependency>
+
+  <!-- DEPENDENCIES: Libraries: Testing --> 
+      <dependency>
+           <groupId>junit</groupId>
+           <artifactId>junit</artifactId>
+           <version>4.12</version>
+           <scope>test</scope>
+      </dependency>
+
   </dependencies> 
+  
 
 
   <!-- COMPILE Source Code: is found in standard directories --> 
-
   <build>
     <plugins>
       <plugin>
